@@ -1,16 +1,16 @@
 {
   "name": "echolator",
-  "module": "commonjs",
   "version": "1.0.0",
-  "files": ["dist"],
-  "types": "dist/index.d.ts",
+  "author": "waspyro",
   "main": "dist/index.js",
+  "module": "commonjs",
+  "description": "",
+  "files": ["dist"],
+  "keywords": [],
+  "license": "ISC",
   "scripts": {
     "prepare": "rm -rf dist && tsc --outDir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "types": "dist/index.d.ts"
 }
