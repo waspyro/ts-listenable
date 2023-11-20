@@ -23,9 +23,10 @@ export default class Listenable<T> {
     }
 
     off = (cb: Listener<T>) => {
-        const before = this.listeners.length
-        this.listeners = this.listeners.filter(el => el !== cb)
-        return before - this.listeners.length
+        const index = this.listeners.indexOf(cb)
+        if(index === -1) return 0
+        this.listeners.splice(index, 1)
+        return 1
     }
 
 }
