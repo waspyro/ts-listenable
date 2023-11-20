@@ -1,5 +1,5 @@
 {
-  "name": "listenable",
+  "name": "echolator",
   "module": "commonjs",
   "version": "1.0.0",
   "files": ["dist"],
